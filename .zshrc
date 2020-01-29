@@ -1,7 +1,7 @@
 export ZSH=~/.oh-my-zsh
 
 # set conda path and your package
-# export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/anaconda3/bin
+# export PATH=$HOME/anaconda3/bin:$PATH
 # export PYTHONPATH=$PYTHONPATH:$HOME/PycharmProjects/current_project
 # export PATH=/home/billyhe/starman/tools:$PATH
 
