@@ -24,6 +24,7 @@ setopt inc_append_history
 
 
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-# map control+r to ranger
-bindkey -s '^r' 'ranger\r'
+alias r='ranger'
+
+
 
