@@ -1,5 +1,7 @@
 let mapleader = ' '
 
+" recursive search dir
+path+=**
 " enable syntax highlight
 syntax enable
 " The width of a hard tabstop measured in "spaces" 
