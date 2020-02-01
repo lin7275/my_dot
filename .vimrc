@@ -26,3 +26,11 @@ set number relativenumber
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdcommenter'
 call plug#end()
+
+# indent option
+set tabstop=8     
+set expandtab    
+set shiftwidth=4  
+set autoindent    
+set smartindent   
+set cindent     
