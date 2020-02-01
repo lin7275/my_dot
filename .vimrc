@@ -1,28 +1,28 @@
 let mapleader = ' '
 
-# enable syntax highlight
+" enable syntax highlight
 syntax enable
-# The width of a hard tabstop measured in "spaces" 
+" The width of a hard tabstop measured in "spaces" 
 set tabstop=4
-# show number
+" show number
 set number
-# show command in lower right corner
+" show command in lower right corner
 set showcmd
-# turn on three filetype option
+" turn on three filetype option
 filetype indent on
-# enable autocomplte menu
+" enable autocomplte menu
 set wildmenu
-# show matching brace
+" show matching brace
 set showmatch
-# incremental search as you type
+" incremental search as you type
 set incsearch
-# highlight search results
+" highlight search results
 set hlsearch
-# turn off highlight
+" turn off highlight
 nnoremap <leader><space> :nohlsearch<CR>
 set number relativenumber
 
-# load plugin
+" load plugin
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdcommenter'
 call plug#end()
