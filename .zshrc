@@ -27,4 +27,4 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 alias r='ranger'
 alias py='python3'
 alias ipy='ipython'
-
+conda config --set changeps1 False #disable virtual envir prefix (cause bug in auto-complete)
