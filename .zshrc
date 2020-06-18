@@ -28,3 +28,4 @@ alias r='ranger'
 alias py='python3'
 alias ipy='ipython'
 conda config --set changeps1 False #disable virtual envir prefix (cause bug in auto-complete)
+export KALDI_ROOT=/usr/local/kaldi
