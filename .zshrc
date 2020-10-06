@@ -28,4 +28,7 @@ alias r='ranger'
 alias py='python3'
 alias ipy='ipython'
 conda config --set changeps1 False #disable virtual envir prefix (cause bug in auto-complete)
-export KALDI_ROOT=/usr/local/kaldi
+export KALDI_ROOT=$HOME/kaldi
+export PATH=$KALDI_ROOT/tools/openfst/bin:$KALDI_ROOT/tools/sph2pipe_v2.5:$PWD:$PATH
+[ ! -f $KALDI_ROOT/tools/config/common_path.sh ] && echo >&2 "The standard file $KALDI_ROOT/tools/config/common_path.sh is not present -> Exit!" && exit 1
+. $KALDI_ROOT/tools/config/common_path.sh
