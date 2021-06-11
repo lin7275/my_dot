@@ -3,3 +3,6 @@ torchaudio
 pytorch
 pyannote
 audiomentations
+ipdb
+h5py
+gputil
