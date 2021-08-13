@@ -8,3 +8,4 @@ h5py
 gputil
 soundfile
 pip install hydra-core --upgrade --pre
+tensorboardX
