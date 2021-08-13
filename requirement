@@ -6,3 +6,4 @@ audiomentations
 ipdb
 h5py
 gputil
+soundfile
