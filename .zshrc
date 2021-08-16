@@ -1,8 +1,9 @@
 export ZSH=~/.oh-my-zsh
 
 # set conda path and your package
-export PATH=$HOME/anaconda3/bin:$PATH
+export PATH=$HOME/anaconda3/bin:$PATH:$HOME/local/bin
 export PYTHONPATH=$PYTHONPATH:$HOME
+export LD_LIBRARY_PATH=$HOME/local/lib:$LD_LIBRARY_PATH
 
 ZSH_THEME="robbyrussell"
 
