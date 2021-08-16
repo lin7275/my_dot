@@ -1,3 +1,3 @@
 conda install "pytorch==1.8.0" torchvision torchaudio cudatoolkit=10.2 -c pytorch
-pip install kaldi_io audiomentations ipdb gputil soundfile tensorboardX "pyannote.audio==1.1.1" gpustat
+pip install kaldi_io audiomentations ipdb gputil soundfile tensorboardX "pyannote.audio==1.1.1" gpustat pydub
 pip install hydra-core --upgrade --pre
