@@ -41,3 +41,10 @@ bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
 export PYTHONBREAKPOINT=ipdb.set_trace
 
+
+
+PROMPT="%F{magenta}%n%f"  # Magenta user name
+PROMPT+="@"
+PROMPT+="%F{blue}${${(%):-%m}#zoltan-}%f" # Blue host name, minus zoltan
+PROMPT+=" "
+PROMPT+="%F{yellow}%1~ %f" # Yellow working directory
