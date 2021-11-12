@@ -48,3 +48,11 @@ PROMPT+="@"
 PROMPT+="%F{blue}${${(%):-%m}#zoltan-}%f" # Blue host name, minus zoltan
 PROMPT+=" "
 PROMPT+="%F{yellow}%1~ %f" # Yellow working directory
+
+# local machine
+alias sync2jumper='rsync -zarv --no-perms --prune-empty-dirs  --include="*/" --include={"*.json","*.py","*.sh","*.yaml"} -L --exclude="*" /Users/wenweilin/PycharmProjects/starman/{core,cli,research,conf} /Users/wenweilin/Documents/git/hifi-gan /Users/wenweilin/Documents/git/my_tacotron2 /Users/wenweilin/Documents/git/my_tacotron2_mini ecs:~'
+alias sync2enm='rsync -zarvp --no-perms --prune-empty-dirs  --include="*/" --include={"*.json","*.py","*.pyx","*.sh","*.yaml","*.txt"} --exclude="*" /Users/wenweilin/PycharmProjects/starman/ /Users/wenweilin/PycharmProjects/my_programs /Users/wenweilin/Documents/git/huawei_diar /Users/wenweilin/PycharmProjects/diar /Users/wenweilin/Documents/git/my_tacotron2_mini /Users/wenweilin/Documents/git/glow-tts enm:~'
+alias sinbox='rsync -zarvp --no-perms --prune-empty-dirs  enm:~/outbox/ /Users/wenweilin/Documents/inbox/'
+export PYTHONPATH=$PYTHONPATH:$HOME/PycharmProjects/starman
+export PYTHONBREAKPOINT=ipdb.set_trace
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
