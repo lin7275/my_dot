@@ -1,4 +1,4 @@
-source ~/my_dot/common.zshrc
+source ~/my_dot/zshrc/common.zshrc
 
 # set conda path and your package
 export PATH=/home12a/wwlin/etc/anaconda3/bin:$PATH:/home12a/wwlin/ffmpeg/bin:$HOME/cli
