@@ -1,11 +1,10 @@
 alias nnn="~/nnn-static"
 alias tmux=/home/wwlin/anaconda3new_2022_0812/bin/tmux
-alias fd=/home/wwlin/anaconda3new_2022_0812/bin/fd
 source ~/my_dot/zshrc/common.zshrc
 
 
 # set conda path and your package
-export PATH=$HOME/anaconda3/bin:$PATH
+export PATH=$HOME/anaconda3/bin:$PATH:/home/wwlin/anaconda3new_2022_0812/bin
 export PATH="$HOME/local/bin:$PATH"
 export PYTHONPATH=$PYTHONPATH:$HOME
 #export LD_LIBRARY_PATH="$HOME/local/lib:$LD_LIBRARY_PATH"
