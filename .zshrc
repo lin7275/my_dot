@@ -56,3 +56,4 @@ alias sinbox='rsync -zarvp --no-perms --prune-empty-dirs  enm:~/outbox/ /Users/w
 export PYTHONPATH=$PYTHONPATH:$HOME/PycharmProjects/starman
 export PYTHONBREAKPOINT=ipdb.set_trace
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
