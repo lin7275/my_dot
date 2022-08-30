@@ -29,6 +29,6 @@ n ()
     fi
 }
 export sel=${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection
-export NNN_PLUG='c:fzcd;j:z;preview-tui;'
+export NNN_PLUG="c:fzcd;j:z;p:preview-tui;"
 export NNN_FIFO="/tmp/nnn.fifo"
 export TERMINAL=tmux

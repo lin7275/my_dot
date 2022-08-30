@@ -1,4 +1,5 @@
-export ZSH=~/.oh-my-zsh
+alias nnn="~/nnn-static"
+source ~/my_dot/zshrc/vai.zshrc
 
 
 # set conda path and your package
@@ -7,15 +8,15 @@ export PATH="$HOME/local/bin:$PATH"
 export PYTHONPATH=$PYTHONPATH:$HOME
 #export LD_LIBRARY_PATH="$HOME/local/lib:$LD_LIBRARY_PATH"
 export LD_LIBRARY_PATH="/home/wwlin/anaconda3/lib:$HOME/local/lib:$LD_LIBRARY_PATH"
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 
-plugins=(
-  git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-zsh-fzf-history-search
-)
-source $ZSH/oh-my-zsh.sh
+# plugins=(
+#   git
+#   zsh-autosuggestions
+#   zsh-syntax-highlighting
+# # zsh-fzf-history-search
+# )
+# source $ZSH/oh-my-zsh.sh
 
 # edit command using vim
 # autoload -U edit-command-line
@@ -23,7 +24,7 @@ source $ZSH/oh-my-zsh.sh
 # bindkey '^x^x' edit-command-line
 
 # collect history from all of the panes
-setopt inc_append_history
+# setopt inc_append_history
 
 
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
@@ -42,7 +43,7 @@ zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
-export PYTHONBREAKPOINT=ipdb.set_trace
+# export PYTHONBREAKPOINT=ipdb.set_trace
 
 alias sj='rsync -zarv --no-perms --prune-empty-dirs  --include="*/" --include={"Dockerfile","*.json","*.py","*.sh","*.yaml"} --exclude="*" a100:~/{analysis,deploy,conf,core,cli,pba,cfg,research,hifi-gan,my_tacotron2_mini,my_tacotron2_mini_refactor,my_tts,new_my_tts,my_se} ~/'
 alias sb='rsync -zarvp --no-perms --prune-empty-dirs --exclude="*.tar"  ~/new_my_tts/projects ~/syncbox/ a100:~/syncbox/' 
@@ -71,7 +72,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 #source activate cuda102
-setopt magic_equal_subst
+# setopt magic_equal_subst
 export KALDI_ROOT=$HOME/kaldi
 export PATH=$KALDI_ROOT/tools/openfst/bin:$KALDI_ROOT/tools/sph2pipe_v2.5:$PWD:$PATH
 . $KALDI_ROOT/tools/config/common_path.sh
@@ -92,10 +93,9 @@ export LC_MEASUREMENT="en_HK.UTF-8"
 export LC_IDENTIFICATION="en_HK.UTF-8"
 export LC_ALL=
 export LANG='zh_CN.UTF-8' LANGUAGE='zh_CN:zh' LC_ALL='zh_CN.UTF-8'
-source ~/nnn.zshrc
+# source ~/nnn.zshrc
 alias tmux=/home/wwlin/anaconda3new_2022_0812/bin/tmux
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 conda activate cuda102
 # [[ -s /home/wwlin/.autojump/etc/profile.d/autojump.sh ]] && source /home/wwlin/.autojump/etc/profile.d/autojump.sh
 eval "$(zoxide init zsh)"
-alias nnn="~/nnn-static"
