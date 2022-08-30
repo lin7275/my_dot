@@ -102,7 +102,9 @@ alias rm="rm -v"
 # eval "$(lua /Users/ericlin/z.lua --init zsh enhanced once fzf)"
 eval "$(zoxide init zsh)"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/my_dot/fzf/completion.zsh ] && source ~/my_dot/fzf/completion.zsh
+[ -f ~/my_dot/fzf/key-bindings.zsh ] && source ~/my_dot/fzf/key-bindings.zsh
 # fzf
 export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden'
 export FZF_DEFAULT_OPTS='--no-height --color=bg+:#343d46,gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b'
@@ -112,5 +114,6 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
 
 export FZF_ALT_C_COMMAND='fd --type d . --color=never --hidden'
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
-
+# export FZF_DEFAULT_COMMAND='fd --type d --strip-cwd-prefix --hidden --follow --exclude .git'
 bindkey "ç" fzf-cd-widget 
+###

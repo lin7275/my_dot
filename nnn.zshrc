@@ -21,7 +21,7 @@ n ()
 
     # The backslash allows one to alias n to nnn if desired without making an
     # infinitely recursive alias
-    \nnn "$@" -A -T t
+    nnn "$@" -A -T t
 
     if [ -f "$NNN_TMPFILE" ]; then
             . "$NNN_TMPFILE"
@@ -29,7 +29,6 @@ n ()
     fi
 }
 export sel=${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection
-export NNN_PLUG='c:fzcd;j:autojump;preview-tui;'
+export NNN_PLUG='c:fzcd;j:z;preview-tui;'
 export NNN_FIFO="/tmp/nnn.fifo"
 export TERMINAL=tmux
-export TMUX_TMPDIR=~/my_tmp
