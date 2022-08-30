@@ -95,6 +95,7 @@ export LC_ALL=
 export LANG='zh_CN.UTF-8' LANGUAGE='zh_CN:zh' LC_ALL='zh_CN.UTF-8'
 # source ~/nnn.zshrc
 alias tmux=/home/wwlin/anaconda3new_2022_0812/bin/tmux
+alias fd=/home/wwlin/anaconda3new_2022_0812/bin/fd
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 conda activate cuda102
 # [[ -s /home/wwlin/.autojump/etc/profile.d/autojump.sh ]] && source /home/wwlin/.autojump/etc/profile.d/autojump.sh
