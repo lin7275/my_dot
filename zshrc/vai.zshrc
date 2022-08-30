@@ -98,4 +98,3 @@ export LANG='zh_CN.UTF-8' LANGUAGE='zh_CN:zh' LC_ALL='zh_CN.UTF-8'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 conda activate cuda102
 # [[ -s /home/wwlin/.autojump/etc/profile.d/autojump.sh ]] && source /home/wwlin/.autojump/etc/profile.d/autojump.sh
-eval "$(zoxide init zsh)"

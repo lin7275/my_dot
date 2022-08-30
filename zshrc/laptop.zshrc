@@ -65,5 +65,4 @@ alias ls='gls'
 export LC_CTYPE=en_US.UTF-8
 alias rm="rm -v"
 # eval "$(lua /Users/ericlin/z.lua --init zsh enhanced once fzf)"
-eval "$(zoxide init zsh)"
 ###

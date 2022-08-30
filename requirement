@@ -3,3 +3,4 @@ pip install kaldi_io audiomentations ipdb gputil soundfile tensorboardX "pyannot
 pip install hydra-core --upgrade --pre
 conda install -c conda-forge fd-find
 conda install -c conda-forge fzf
+conda install -c conda-forge zoxide 
