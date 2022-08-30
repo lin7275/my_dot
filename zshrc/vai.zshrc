@@ -1,5 +1,5 @@
 alias nnn="~/nnn-static"
-source ~/my_dot/zshrc/vai.zshrc
+source ~/my_dot/zshrc/common.zshrc
 
 
 # set conda path and your package
