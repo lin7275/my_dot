@@ -13,3 +13,4 @@ it executable by chmod +x sel2sel.
 
 
 # nnn -x
+nnn.zshrc located in /home12a/wwlin/my_dot/nnn.zshrc
