@@ -1,1 +1,1 @@
-mamba install einops ipython pandas joblib
+mamba install einops ipython pandas joblib librosa
