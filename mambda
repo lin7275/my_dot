@@ -2,3 +2,5 @@ mamba install einops ipython pandas joblib librosa h5py
 pip install soundfile audiomentations
 pip install hydra-core==1.1.0.rc1
 mamba install tensorboard
+pip install pypinyin_dict pypinyin ipdb
+
