@@ -12,4 +12,5 @@ source $ZSH/oh-my-zsh.sh
 alias py='python3'
 alias ipy='ipython'
 export PYTHONBREAKPOINT=ipdb.set_trace
-alias vim="./nvim.appimage"
+alias vim=$HOME/nvim.appimage
+export CORPUS=/mnt/sd2/wwlin
