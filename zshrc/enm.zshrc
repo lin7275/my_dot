@@ -4,7 +4,7 @@ source ~/my_dot/zshrc/common.zshrc
 export PATH=/home12a/wwlin/etc/anaconda3/bin:$PATH:/home12a/wwlin/ffmpeg/bin:$HOME/cli
 export PATH=/home12a/wwlin/anaconda3/bin:$PATH:/home12a/wwlin/ffmpeg/bin:$HOME/cli:$HOME/local/bin
 export PYTHONPATH=$PYTHONPATH:$HOME
-export PATH=$PATH:$HOME/mambaforge/bin
+export PATH=$HOME/mambaforge/bin:$PATH
 
 # edit command using vim
 # autoload -U edit-command-line
