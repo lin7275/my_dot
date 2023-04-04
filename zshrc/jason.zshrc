@@ -16,3 +16,4 @@ alias vim=$HOME/nvim.appimage
 export CORPUS=/mnt/sd2/wwlin
 alias n=$HOME/nnn-static
 export PATH=$PATH:/home/wwlin/.local/bin
+eval "$(zoxide init zsh)"
