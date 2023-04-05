@@ -1,11 +1,7 @@
-pip install einops ipython pandas joblib librosa h5py
-pip install soundfile audiomentations
+pip install einops ipython pandas joblib librosa h5py soundfile audiomentations pypinyin_dict pypinyin ipdb gputil gpustat librosa
 pip install hydra-core==1.1.0.rc1
-mamba install tensorboard
-pip install pypinyin_dict pypinyin ipdb
 pip install pytorch-lightning
   
-pip install gputil gpustat librosa
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # pytorch
